@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this dataset or pipeline, please cite the accompanying paper."
+title: "Hardware-Aware Embedded Python Code Generation: Dataset & Generation Pipeline"
+abstract: >-
+  A domain-specific corpus of 17,000 instruction-to-code pairs for hardware-aware
+  embedded Python on Raspberry Pi (GPIO, I2C, SPI, UART, PWM, camera/CV, sensors,
+  networking/MQTT), together with the validation-in-the-loop pipeline used to
+  synthesize and validate the data. This repository releases the license-verified
+  pairs; the remainder will follow once their licenses are verified.
+type: dataset
+version: "1.0"
+authors:
+  - family-names: "Saeed"
+    given-names: "Muhammad Saqib"
+    affiliation: "University of Southern Denmark"
+    email: "musae@sdu.dk"
+  - family-names: "Senouci"
+    given-names: "Benaoumeur"
+    affiliation: "University of Southern Denmark"
+    email: "senouci@sdu.dk"
+keywords:
+  - large language models
+  - embedded systems
+  - code generation
+  - hardware-aware programming
+  - Raspberry Pi
+  - fine-tuning
+  - dataset
+license: CC-BY-4.0
+preferred-citation:
+  type: conference-paper
+  title: "LLMs for Hardware-Aware Embedded Python Code Generation: Benchmark-Driven Comparative Study"
+  year: 2026
+  authors:
+    - family-names: "Saeed"
+      given-names: "Muhammad Saqib"
+      affiliation: "University of Southern Denmark"
+    - family-names: "Senouci"
+      given-names: "Benaoumeur"
+      affiliation: "University of Southern Denmark"

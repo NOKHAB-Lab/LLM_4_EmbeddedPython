@@ -1,0 +1,7 @@
+# Runtime
+requests>=2.28
+tqdm>=4.64
+# Optional: static-analysis component of the validator (skipped gracefully if absent)
+pylint>=2.15
+# Dev / test
+pytest>=7.0

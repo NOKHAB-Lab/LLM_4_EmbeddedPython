@@ -1,0 +1,6 @@
+# Keep JSONL data as-is (binary-safe: no line-ending conversion).
+*.jsonl -text
+
+# Normalize line endings for text/source so diffs stay clean across platforms.
+*.py    text eol=lf
+*.md    text eol=lf

@@ -1,0 +1,36 @@
+# --- Secrets (NEVER commit) ---
+.env
+*.env
+!.env.example
+*_api_keys*
+secrets.*
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# --- Pipeline run outputs (regenerated; not source) ---
+pipeline/raspberry_pi_code_examples*/
+pipeline/**/debug/
+pipeline/**/invalid_examples/
+generation_metadata_*.json
+generation_progress*.json
+logs/
+*.log
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
