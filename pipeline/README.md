@@ -12,7 +12,7 @@ structure, quality score), repairs failures, and standardizes the instruction.
 1. **Taxonomy sampling** — category × subcategory × complexity × style × Pi-model × integration × context (`dkb.py`).
 2. **Prompt construction** (`prompt_generator.py`) — base prompt → enrichment (1–4 library recommendations).
 3. **Code generation** (`code_generator.py` + `api_client.py`) — bounded Gemini call, robust fence extraction.
-4. **Validation-in-the-loop** (`validation.py`) — `compile()` syntax, **whitelist + blacklist** imports, length, structure, composite quality score (≥60/100); up to 4 LLM correction attempts.
+4. **Validation-in-the-loop** (`validation.py`) — `compile()` syntax, **whitelist + blacklist** imports, length, structure, composite quality score (≥55/100); up to 4 LLM correction attempts.
 5. **Instruction standardization** (`prompt_standardizer.py`) — rewrites the verbose prompt into a concise instruction.
 6. **Persistence + resume** (`progress_manager.py`) — atomic checkpointing.
 
