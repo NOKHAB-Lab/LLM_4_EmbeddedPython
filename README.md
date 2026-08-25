@@ -25,7 +25,7 @@ This repository is the supporting material for the paper:
 ```
 .
 ├── data/                      # the dataset + its licensing & documentation
-│   ├── dataset_clean.jsonl    # 12,599 instruction→code pairs (~64 MB)
+│   ├── dataset_clean.jsonl    #  instruction→code pairs (~64 MB)
 │   ├── DATASHEET.md               # Datasheets-for-Datasets documentation
 │   ├── LICENSE.md                 # layered dataset license (read before reuse)
 │   └── THIRD_PARTY_NOTICES.md     # attribution for community-sourced code
@@ -123,7 +123,7 @@ Full documentation, configuration flags, and architecture: **[pipeline/README.md
 
 ## Results (from the paper)
 
-Fine-tuning four open-source code LLMs on this dataset (QLoRA) yields large gains across static
+Fine-tuning four open-source code LLMs on this dataset using QLoRA yields large gains across static
 quality, sampling reliability (Pass@10 at the 80% threshold), and physical hardware validation on
 a Raspberry Pi 4B:
 
