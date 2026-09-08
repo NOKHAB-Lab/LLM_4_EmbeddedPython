@@ -40,6 +40,7 @@ This repository is the supporting material for the paper:
 │   ├── progress_manager.py        # atomic checkpoint / resume
 │   ├── tests/                     # pytest suite
 │   └── README.md                  # full pipeline docs
+├── KNOWN_ISSUES.md            # corpus errata — read before reproducing results
 ├── LICENSE                    # MIT — applies to pipeline/ source code
 ├── CITATION.cff               # how to cite
 └── .gitattributes             # text / line-ending attributes
@@ -58,7 +59,7 @@ added in a future release once their licenses have been verified. Each line:
 | `prompt` | string | Instruction describing the hardware task |
 | `completion` | string | Python implementation (Raspberry Pi target) |
 | `categories` | list[str] | 6 broader categories, 18 functional/hardware labels |
-| `metadata` | object | `task`, `complexity`, `tags`, `provenance` |
+| `metadata` | object | `task` (nullable), `complexity`, `provenance` |
 
 Every record carries machine-readable licensing **provenance** under `metadata.provenance`
 (`license`, `redistributable`, plus `source_repo`, `source_url`, `license_class` for

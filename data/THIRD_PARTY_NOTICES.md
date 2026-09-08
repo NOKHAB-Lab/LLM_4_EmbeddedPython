@@ -62,13 +62,6 @@ Source: https://github.com/lipoja/AMSpi
 Programs in dataset: 18  
 Modified: Yes, adapted for prompt-completion dataset format.
 
-### stijojoseph/AI-JARVIS-PERSONAL-ASSISTANT
-Copyright (c) 2020 stijo joseph  
-License: MIT  
-Source: https://github.com/stijojoseph/AI-JARVIS-PERSONAL-ASSISTANT  
-Programs in dataset: 18  
-Modified: Yes, adapted for prompt-completion dataset format.
-
 ### cjee21/RPi-DHT20
 Copyright (c) 2023 cjee21  
 License: MIT  
@@ -188,12 +181,6 @@ Source: https://github.com/Varsha02nats/Raspberry-Pi-Object-detection-using-YOLO
 Programs in dataset: 9  
 Modified: Yes, adapted for prompt-completion dataset format.
 
-### anooshd7/DrugDispenser
-Copyright (c) 2023 Anoosh Damodar  
-License: MIT  
-Source: https://github.com/anooshd7/DrugDispenser  
-Programs in dataset: 9  
-Modified: Yes, adapted for prompt-completion dataset format.
 
 ### JFtechOfficial/Raspberry-Pi-PWM-fan
 Copyright (c) 2018  
@@ -251,12 +238,6 @@ Source: https://github.com/hallee/espresso-arm
 Programs in dataset: 9  
 Modified: Yes, adapted for prompt-completion dataset format.
 
-### calapsss/face_detection_tutorial
-Copyright (c) 2023 Charles Calapini  
-License: MIT  
-Source: https://github.com/calapsss/face_detection_tutorial  
-Programs in dataset: 9  
-Modified: Yes, adapted for prompt-completion dataset format.
 
 ### MrAI-NDHU/servo_controller
 Copyright (c) 2019 Mr.AI-NDHU  
@@ -384,12 +365,6 @@ Source: https://github.com/LinuxCircle/tea5767
 Programs in dataset: 4  
 Modified: Yes, adapted for prompt-completion dataset format.
 
-### adafruit/Adafruit_Python_ADXL345
-Copyright (c) 2016 Adafruit Industries  
-License: MIT  
-Source: https://github.com/adafruit/Adafruit_Python_ADXL345  
-Programs in dataset: 4  
-Modified: Yes, adapted for prompt-completion dataset format.
 
 ### denvaar/creeper
 Copyright (c) 2017 Denver Smith  

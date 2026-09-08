@@ -12,7 +12,7 @@ Format follows *Datasheets for Datasets* (Gebru et al., 2021). Version 1.0.
 
 ## Composition
 - **Instances:** instruction→code pairs, `{id, prompt, completion, categories, metadata}`.
-  Released file `dataset_clean.jsonl`: **12,599 rows**, each with a unique opaque `id`
+  Released file `dataset_clean.jsonl`: one JSON object per line, each with a unique opaque `id`
   (e.g. `llm4ep-b744ff9171ca`). The full corpus described in the paper is 17,000 pairs;
   community-sourced examples whose licenses are still being verified are withheld from this
   release and will be added in a future version once verified. Some rows share a completion
@@ -24,9 +24,12 @@ Format follows *Datasheets for Datasets* (Gebru et al., 2021). Version 1.0.
 - **Hardware domains/categories/sub-categories:** 6 broader categories; 18 functional/hardware
   multi-labels (GPIO, I2C, SPI, UART/serial, PWM/motor, camera/CV, sensors, networking, display,
   data-logging, config, DB, simulation, ML, etc.).
-- **Labels/metadata per record:** `task`, `complexity`, `tags`, `categories`, and
+- **Labels/metadata per record:** `task` (nullable), `complexity`, `categories`, and
   `provenance` (license, redistributable, plus source_repo, source_url, license_class for
-  community records).
+  community records). `complexity` takes exactly one of `basic`, `intermediate`, `advanced`.
+  `task` is a free-text human-readable label and is `null` on community-sourced records
+  whose description was lost by a defect in the ingest step; use `categories`, which is
+  populated on every record, for filtering. See KNOWN_ISSUES.md.
 - **Quality:** all records pass the validation-in-the-loop checks and **parse as valid Python 3**;
   see the paper for the full evaluation.
 - **Sensitive data:** Author/maintainer emails appear inside third-party code as part of
@@ -74,6 +77,9 @@ Format follows *Datasheets for Datasets* (Gebru et al., 2021). Version 1.0.
 - **Maintainer:** Muhammad Saqib Saeed &lt;musae@sdu.dk&gt;, University of Southern Denmark.
 - **Removal requests:** authors of unlicensed source code may request removal via the maintainer
   contact (see THIRD_PARTY_NOTICES.md).
-- **Errata/versioning:** track changes in this datasheet; this is v1.1
+- **Errata/versioning:** track changes in this datasheet; this is v1.2
   (v1.1: added unique per-record `id`; consolidated metadata to task/complexity/tags/provenance;
-  withheld community examples pending license verification — to be released once verified).
+  withheld community examples pending license verification — to be released once verified.
+  v1.2: removed off-domain records carrying a third-party credential; removed the redundant
+  `tags` field; normalised the `complexity` vocabulary; set unrecoverable `task` values to
+  `null`. All changes are itemised in KNOWN_ISSUES.md).
