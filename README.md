@@ -27,6 +27,7 @@ This repository is the supporting material for the paper:
 ├── data/                      # the dataset + its licensing & documentation
 │   ├── dataset_clean.jsonl    #  instruction→code pairs (~64 MB)
 │   ├── DATASHEET.md               # Datasheets-for-Datasets documentation
+│   ├── KNOWN_ISSUES.md            # corpus errata — read before reproducing results
 │   ├── LICENSE.md                 # layered dataset license (read before reuse)
 │   └── THIRD_PARTY_NOTICES.md     # attribution for community-sourced code
 ├── pipeline/                  # the generation/validation pipeline (MIT-licensed code)
@@ -40,7 +41,6 @@ This repository is the supporting material for the paper:
 │   ├── progress_manager.py        # atomic checkpoint / resume
 │   ├── tests/                     # pytest suite
 │   └── README.md                  # full pipeline docs
-├── KNOWN_ISSUES.md            # corpus errata — read before reproducing results
 ├── LICENSE                    # MIT — applies to pipeline/ source code
 ├── CITATION.cff               # how to cite
 └── .gitattributes             # text / line-ending attributes
